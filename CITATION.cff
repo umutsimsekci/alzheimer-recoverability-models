@@ -4,7 +4,7 @@ type: software
 title: "Conditional functional recoverability: models and synthetic simulations"
 authors:
   - name: "umutsimsekci (GitHub account)"
-version: "v1.0.0"
+version: "v1.0.1"
 date-released: 2026-10-05
 repository-code: "https://github.com/umutsimsekci/alzheimer-recoverability-models"
 url: "https://github.com/umutsimsekci/alzheimer-recoverability-models"

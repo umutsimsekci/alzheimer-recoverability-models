@@ -23,13 +23,13 @@
     },
     {
       "path": "CITATION.cff",
-      "bytes": 702,
-      "sha256": "ff61f586d32cba2945006e608db5d29c468c9e4ffe9ddb2ad03ed85a05ffbffe"
+      "bytes": 713,
+      "sha256": "80a90b22a66a4f5d21aca73435b330df1f556fe753a7bf012a92e649df342b27"
     },
     {
       "path": "CITATION_PENDING.md",
       "bytes": 929,
-      "sha256": "8537f4f8f9f9428feede01f6b01ae27ae17c22cdb528eb96cf8341bad0910071"
+      "sha256": "cbe28d7206f3d841543bd3b9f1d280d866e2b42b40b18b86037b1d30223a6976"
     },
     {
       "path": "data_dictionary.csv",
@@ -78,8 +78,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 11607,
-      "sha256": "23bd6189572f037de45513eb8f964023b3b9a66d2e0b08450a460d9a35f1425d"
+      "bytes": 11562,
+      "sha256": "43e103d67680f4791cc7770f004a2cdd461e5a0a0cc0f3af662689dc573f8b49"
     },
     {
       "path": "reports/experiment_validation.md",
@@ -529,7 +529,7 @@
     {
       "path": "FILE_INVENTORY.csv",
       "bytes": 12379,
-      "sha256": "df2cda6bbe0671a68a008b622fdfb0dab5c3b85143ed4a276ad9eaa31822b7f5"
+      "sha256": "8bbe2033467c7c2234fd36b95916fded648a19ffa8d7ebe781e659f059fc5297"
     }
   ],
   "self_hash_policy": "Manifest excludes itself and SHA256SUMS. CSV excludes itself and both hash-control files."

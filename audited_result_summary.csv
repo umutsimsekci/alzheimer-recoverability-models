@@ -1,0 +1,10 @@
+metric,subset,numerator,denominator,source_path,source_sha256,interpretation
+M1 primary-window attainment,none/identical_policies,47,256,results/study_full_v1/primary_outcomes.csv,4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c,"Synthetic uniform-design fraction; sampled [90,120] window; nominal excluded"
+M1 primary-window attainment,drive/maintenance,126,256,results/study_full_v1/primary_outcomes.csv,4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c,"Synthetic uniform-design fraction; sampled [90,120] window; nominal excluded"
+M1 primary-window attainment,both/maintenance,199,256,results/study_full_v1/primary_outcomes.csv,4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c,"Synthetic uniform-design fraction; sampled [90,120] window; nominal excluded"
+M1 primary-window attainment,drive/full_withdrawal,47,256,results/study_full_v1/primary_outcomes.csv,4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c,"Synthetic uniform-design fraction; sampled [90,120] window; nominal excluded"
+M1 primary-window attainment,both/full_withdrawal,47,256,results/study_full_v1/primary_outcomes.csv,4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c,"Synthetic uniform-design fraction; sampled [90,120] window; nominal excluded"
+primary outcomes,complete performed run,9252,9252,results/study_full_v1/primary_outcomes.csv,4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c,Actual count / declared expected count
+structural outcomes,complete performed run,162,162,results/study_full_v1/structural_outcomes.csv,066e57ef9d648c84c2b9adbafe2f4e2d0cf422db164818e3474787812cd5cbd8,Actual count / declared expected count
+observation packets,complete performed run,2700,2700,results/observation_full_20261005T083233_0bb911bc/observation_summary.csv,6cbeb849c0777ebba8b25b8c1c03a8f9a4b4e725d169269d9563b0ae0afaed49,Actual count / declared expected count
+observation rows,complete performed run,167400,167400,results/observation_full_20261005T083233_0bb911bc/observations.csv,3ae5040358eb2b61172e3cf7d01f5d02ff0d7e0881759a4aa282bd8229eaf7d8,Actual count / declared expected count

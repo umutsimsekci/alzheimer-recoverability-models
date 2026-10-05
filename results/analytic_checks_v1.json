@@ -1,0 +1,37 @@
+{
+  "evidence_class": "symbolic_mathematical_verification",
+  "empirical_calibration": false,
+  "checks": {
+    "fold_drift_identity": true,
+    "fold_derivative_identity": true,
+    "cusp_second_derivative": true,
+    "cusp_drive": true,
+    "cusp_repair": true,
+    "common_rate_scaling": true,
+    "nominal_separatrix": true,
+    "repair_ordering_derivative": true,
+    "drive_ordering_derivative": true
+  },
+  "all_passed": true,
+  "nominal_roots": [
+    {
+      "x": 0.070871215252208,
+      "slope": -0.6033030277982336
+    },
+    {
+      "x": 0.4,
+      "slope": 0.17
+    },
+    {
+      "x": 0.529128784747792,
+      "slope": -0.2366969722017664
+    }
+  ],
+  "sympy_version": "1.14.0",
+  "elapsed_seconds": 0.18949309998424724,
+  "input_sha256": {
+    "protocol/study_design_v1.md": "cb14adbfc8c1d3621acc4f9f5839be8decc999cfb4fcc2b7b0aeb9c5cf4352be",
+    "protocol/analytical_results.md": "8b9f0b354471b54193b1ac8acb60db5a6ab7cb8ce358197be56ea300c919c7db",
+    "scripts/check_analytic_claims.py": "c5c85a3a704dda264c6973ec6d9855eed63c5c2c64752cff520316283a5d81d7"
+  }
+}

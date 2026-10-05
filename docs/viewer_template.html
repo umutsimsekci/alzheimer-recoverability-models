@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Conditional recoverability — saved synthetic trajectories</title>
+<style>
+:root{font-family:system-ui,sans-serif;color:#172b3a;background:#eef3f5}body{max-width:1120px;margin:24px auto;padding:0 18px}h1{font-size:1.65rem}p{line-height:1.55}.panel{background:white;border:1px solid #cad6df;border-radius:10px;padding:18px;margin:16px 0}.controls{display:flex;gap:20px;flex-wrap:wrap;align-items:end}label{display:flex;gap:6px;flex-direction:column;font-weight:600}select{font:inherit;padding:8px;max-width:100%}#chart{width:100%;height:auto}#source{font-size:.8rem;overflow-wrap:anywhere}#sample{font-variant-numeric:tabular-nums;min-height:24px}code{overflow-wrap:anywhere}table{border-collapse:collapse;width:100%;font-size:.9rem}th,td{padding:8px;text-align:left;border-bottom:1px solid #ddd}.legend{display:flex;flex-wrap:wrap;gap:14px;font-size:.9rem}.swatch{display:inline-block;width:20px;height:3px;vertical-align:middle;margin-right:6px}img{max-width:100%;height:auto}figure{margin:20px 0}figcaption{line-height:1.4}a{color:#145b91}summary{cursor:pointer;font-weight:600}#equation{white-space:pre-wrap;font-family:ui-monospace,monospace;line-height:1.6}@media(max-width:600px){body{padding:0 8px}.panel{padding:12px}h1{font-size:1.3rem}}
+</style></head><body>
+<h1>Conditional recoverability: saved model trajectories</h1>
+<p>Synthetic, uncalibrated ODE calculations in dimensionless time. This viewer reads saved nominal trajectories; it does not simulate new settings, fit parameters, or establish clinical efficacy. All data and figures are embedded, so the file works offline without a server.</p>
+<section class="panel controls" aria-label="Saved trajectory controls">
+<label>Model / time constant<select id="model"></select></label>
+<label>Saved policy<select id="policy"></select></label>
+<label style="flex-direction:row;align-items:center"><input id="compare" type="checkbox">Compare saved x trajectories</label>
+</section>
+<section class="panel"><div id="equation"></div><p id="context"></p><svg id="chart" viewBox="0 0 1000 480" role="img" aria-label="Selected saved trajectory versus dimensionless time"></svg><div id="legend" class="legend"></div><p id="sample">Move the pointer over the plot to read the nearest saved row.</p><p id="source"></p></section>
+<section class="panel"><h2>Controls and states</h2>
+<p><b>x</b> is impairment; <b>s</b> is the slow commanded-drive state, active only in M3; <b>d</b> is structural loss, active only in M4. Inactive placeholders are not plotted. Functional output is F=(1−d)(1−x). This plot shows states, not observed cognition or patient outcomes.</p>
+<p>All nominal rows start at the largest attracting pretreatment equilibrium. Nominal post-drive a=0.06, feedback b=4 and baseline repair r=1.05; pretreatment a=0.14. Drive reduction is 0.08. Repair increment is 0.4 during [30,45). M3 uses τ=1,10 or50; τ has the same dimensionless time units. The M4 dataset here is the separate Stage D example: d=0.15 fixed, ε=η=0, xc=0.25, maintained combination only. Evolving M4 and alternative M4 policies are not supplied as nominal CSV trajectories and cannot be selected.</p>
+<table><thead><tr><th>Policy</th><th>At t=30</th><th>At t=45 and later</th></tr></thead><tbody>
+<tr><td>No control</td><td>Baseline continues</td><td>Baseline continues</td></tr>
+<tr><td>Repair only</td><td>Repair pulse begins</td><td>Pulse ends; baseline continues</td></tr>
+<tr><td>Drive / maintenance</td><td>Drive reduction begins</td><td>Reduced drive remains active</td></tr>
+<tr><td>Drive / full withdrawal</td><td>Drive reduction begins</td><td>All controls end; pretreatment drive restored</td></tr>
+<tr><td>Both / maintenance</td><td>Drive reduction and repair pulse begin</td><td>Repair pulse ends; reduced drive remains active</td></tr>
+<tr><td>Both / full withdrawal</td><td>Drive reduction and repair pulse begin</td><td>All controls end; pretreatment drive restored</td></tr></tbody></table>
+<p>Event lines mark onset 30 and pulse-end/withdrawal 45. Curves join existing rows by straight segments for display, not new integration. Hover reports a nearest saved row, without interpolation. Zero-noise repeat observations and this nominal view are not additional independent evidence.</p></section>
+<section class="panel"><details><summary>Existing study figures</summary>__SAVED_FIGURES__</details></section>
+<p>See <a href="../README.md">README</a>, <a href="../protocol/study_design_v1.md">prospective protocol</a> and <a href="../FILE_INVENTORY.csv">file inventory</a>. Hashes identify the exact input CSV files. Full scientific caveats and deferred analyses are in the README and technical reports.</p>
+<script id="saved-data" type="application/json">__SAVED_DATA__</script>
+<script>
+'use strict';
+const data=JSON.parse(document.getElementById('saved-data').textContent),model=document.getElementById('model'),policy=document.getElementById('policy'),compare=document.getElementById('compare'),svg=document.getElementById('chart');
+const equations={M0:'M0: dx/dt = a(t)(1−x) − r(t)x',M1:'M1: dx/dt = a(t)(1−x) + bx²(1−x) − r(t)x',M2:'M2: dx/dt = a(t)(1−x) + bx(1−x) − r(t)x',M3:'M3: dx/dt = s(1−x) − r(t)x\n    ds/dt = (a(t)−s)/τ   (linear feedback alternative)',M4:'M4: dx/dt = a(t)(1−x) + bx²(1−x) − r(t)(1−d)x\n    dd/dt = ε max(x−xc,0)(1−d) − ηd\n    Here d=0.15 is frozen (ε=η=0).'};
+const colors=['#155e9a','#bf5600','#00856b','#8138a3','#ab243b','#6c6a00'];
+data.forEach((d,i)=>model.add(new Option(d.label.replaceAll('_',' '),i)));model.value=String(data.findIndex(d=>d.model==='M1'));
+let current=null,points=null,maxT=120;
+function node(tag,attrs,text){const n=document.createElementNS('http://www.w3.org/2000/svg',tag);Object.entries(attrs).forEach(([k,v])=>n.setAttribute(k,String(v)));if(text!==undefined)n.textContent=text;svg.appendChild(n);return n;}
+function updatePolicies(){current=data[Number(model.value)];policy.replaceChildren();Object.keys(current.series).forEach(k=>policy.add(new Option(k,k)));const preferred=Object.keys(current.series).find(k=>k==='both / maintenance');if(preferred)policy.value=preferred;compare.checked=false;draw();}
+function draw(){current=data[Number(model.value)];points=current.series[policy.value];maxT=Math.max(...points.map(p=>p[0]));svg.replaceChildren();const X=t=>70+900*t/maxT,Y=v=>420-370*v;
+for(let i=0;i<=5;i++){const v=i/5;node('line',{x1:70,y1:Y(v),x2:970,y2:Y(v),stroke:'#e1e8ed'});node('text',{x:57,y:Y(v)+5,'text-anchor':'end','font-size':15},v.toFixed(1));}
+for(let t=0;t<=maxT;t+=20){node('text',{x:X(t),y:448,'text-anchor':'middle','font-size':15},t);}
+node('line',{x1:70,y1:420,x2:970,y2:420,stroke:'#334b5d'});node('text',{x:520,y:477,'text-anchor':'middle','font-size':16},'Dimensionless time');node('text',{x:70,y:22,'font-size':16},'State value');
+[30,45].forEach(t=>{node('line',{x1:X(t),y1:50,x2:X(t),y2:420,stroke:'#727d88','stroke-dasharray':'5 5'});node('text',{x:X(t)+5,y:41,'font-size':13},t===30?'onset 30':'pulse end / withdrawal 45');});
+const traces=compare.checked?Object.entries(current.series).map(([k,p],i)=>({name:'x: '+k,pts:p,col:1,color:colors[i%colors.length]})):[{name:'x: impairment',pts:points,col:1,color:colors[0]}];
+if(!compare.checked&&current.model==='M3')traces.push({name:'s: slow drive',pts:points,col:2,color:colors[1]});if(!compare.checked&&current.model==='M4')traces.push({name:'d: frozen structural loss',pts:points,col:3,color:colors[1]});
+traces.forEach(tr=>node('polyline',{points:tr.pts.map(p=>X(p[0])+','+Y(p[tr.col])).join(' '),fill:'none',stroke:tr.color,'stroke-width':2.2}));
+const legend=document.getElementById('legend');legend.replaceChildren();traces.forEach(tr=>{const span=document.createElement('span'),sw=document.createElement('span');sw.className='swatch';sw.style.background=tr.color;span.append(sw,document.createTextNode(tr.name));legend.append(span);});
+document.getElementById('equation').textContent=equations[current.model];document.getElementById('context').textContent=current.model==='M4'?'Saved Stage D frozen-structure nominal trajectory; only maintained combination is available.':'Saved A/B/C nominal trajectory. The τ suffix is active only for M3; other τ suffixes are placeholders.';
+document.getElementById('source').textContent='Input CSV: '+current.source+' | SHA256: '+current.sha256;document.getElementById('sample').textContent='Move the pointer over the plot to read the nearest row of the selected policy.';
+}
+svg.addEventListener('pointermove',e=>{const rect=svg.getBoundingClientRect(),sx=(e.clientX-rect.left)*1000/rect.width,t=Math.max(0,Math.min(maxT,(sx-70)*maxT/900));const p=points.reduce((a,b)=>Math.abs(b[0]-t)<Math.abs(a[0]-t)?b:a);document.getElementById('sample').textContent=policy.value+' | t='+p[0].toFixed(2)+' | x='+p[1].toFixed(6)+(current.model==='M3'?' | s='+p[2].toFixed(6):'')+(current.model==='M4'?' | d='+p[3].toFixed(6):'');});
+model.addEventListener('change',updatePolicies);policy.addEventListener('change',draw);compare.addEventListener('change',draw);updatePolicies();
+</script></body></html>

@@ -1,0 +1,99 @@
+{
+  "evidence_class": "synthetic_simulation",
+  "protocol_complete": false,
+  "stages_requested": "ABC",
+  "seed": 20261005,
+  "dimensionless": true,
+  "rtol": 1e-09,
+  "atol": 1e-11,
+  "max_step": 0.5,
+  "solver": "DOP853",
+  "sample_step": 0.25,
+  "code_protocol_hashes": {
+    "protocol\\study_design_v1.md": "cb14adbfc8c1d3621acc4f9f5839be8decc999cfb4fcc2b7b0aeb9c5cf4352be",
+    "scripts\\run_study_v1.py": "c11d8991e41b782902cf8a403dc25ffeb01434ef3ec1183b7224bd3d2f32f1aa",
+    "src\\recoverability\\model.py": "f6268fdf0e0d450da5bb86c6c859333f87c6a6df775ef8cda01ccdcc8b7bc3cc",
+    "protocol\\clarifications_v1_1.md": "4a7d18bd56cbf940d22c288b0fed0766cc420c5052b18c6d7601b33d4728eb68"
+  },
+  "python": "3.13.6",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "owner": "literature_experiment_driver",
+  "deferred": [
+    "Stage D observations/nuisance/identifiability/fitting",
+    "M4 evolving-structure isolated/manifold equilibrium certification",
+    "Global control-set reachability proof; pulse-family results only",
+    "Continuous persistence extrema certification; sampled maxima reported"
+  ],
+  "jobs": [
+    {
+      "stage": "A",
+      "owner": "literature_experiment_driver",
+      "inputs": [
+        "protocol",
+        "core model",
+        "parameter/control tables"
+      ],
+      "dependency": "Stage A verified core for B/C",
+      "acceptance": "Numerical checks; bounds; no clipping; explicit unresolved states",
+      "status": "generated_unreviewed",
+      "result": {
+        "core": {
+          "checks": 157,
+          "passed": true
+        },
+        "phase": {
+          "points": 52111,
+          "bistable": 5460
+        }
+      },
+      "elapsed_seconds": 152.38935819995822
+    },
+    {
+      "stage": "B",
+      "owner": "literature_experiment_driver",
+      "inputs": [
+        "protocol",
+        "core model",
+        "parameter/control tables"
+      ],
+      "dependency": "Stage A verified core for B/C",
+      "acceptance": "Numerical checks; bounds; no clipping; explicit unresolved states",
+      "status": "generated_unreviewed",
+      "result": {
+        "primary_cases": 9252,
+        "initial_sensitivity_cases": 144,
+        "onset_sensitivity_cases": 144,
+        "contrasts": 3084
+      },
+      "elapsed_seconds": 61.98943070002133
+    },
+    {
+      "stage": "C",
+      "owner": "literature_experiment_driver",
+      "inputs": [
+        "protocol",
+        "core model",
+        "parameter/control tables"
+      ],
+      "dependency": "Stage A verified core for B/C",
+      "acceptance": "Numerical checks; bounds; no clipping; explicit unresolved states",
+      "status": "generated_unreviewed",
+      "result": {
+        "structural_cases": 162,
+        "cost_cases": 18,
+        "history_cases": 12,
+        "ramps": 18,
+        "evolving_structure_root_certification": "deferred",
+        "M4_convergence_extension_rows": 288
+      },
+      "elapsed_seconds": 45.83350840001367
+    }
+  ],
+  "failures": [],
+  "elapsed_seconds": 264.62106899998616,
+  "status": "generated_partial_protocol_unreviewed"
+}

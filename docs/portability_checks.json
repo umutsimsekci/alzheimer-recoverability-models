@@ -1,0 +1,72 @@
+{
+  "evidence_class": "technical_packaging_verification",
+  "scientific_tests": {
+    "command": "python -m pytest -q -p no:cacheprovider tests/test_model.py tests/test_study_driver.py tests/test_observation_audit.py",
+    "passed": 55,
+    "failed": 0,
+    "elapsed_seconds": 9.09,
+    "environment": "Existing Python 3.13.6 isolated scientific environment; new candidate directory. No clean dependency installation performed."
+  },
+  "driver_help_and_import_checks": [
+    {
+      "script": "run_study_v1.py",
+      "command": "python scripts/run_study_v1.py --help (from outside repository root)",
+      "exit_code": 0
+    },
+    {
+      "script": "run_observation_audit.py",
+      "command": "python scripts/run_observation_audit.py --help (from outside repository root)",
+      "exit_code": 0
+    },
+    {
+      "script": "check_analytic_claims.py",
+      "command": "python scripts/check_analytic_claims.py --help (from outside repository root)",
+      "exit_code": 0
+    },
+    {
+      "script": "build_manuscript_figures.py",
+      "command": "python scripts/build_manuscript_figures.py --help (from outside repository root)",
+      "exit_code": 0
+    },
+    {
+      "check": "core import from explicit portable src directory",
+      "passed": true
+    }
+  ],
+  "viewer_control_harness": {
+    "command": "node tests/check_viewer_controls.mjs",
+    "datasets": 7,
+    "policy_choices": 37,
+    "comparison_checks": 7,
+    "nearest_row_hover_checks": 37,
+    "status": "passed",
+    "scope": "DOM logic only; no browser rendering"
+  },
+  "browser_visual_check": {
+    "status": "not_performed",
+    "reason": "CUA browser inventory empty; in-app browser unavailable"
+  },
+  "scientific_reruns": "none; focused tests include bounded pre-existing mathematical checks",
+  "cross_platform": "Not executed on another operating system; frozen package distribution availability untested.",
+  "integrity_checks": {
+    "manifest_entries": 105,
+    "checksum_entries": 106,
+    "viewer_exact_saved_rows": 17378,
+    "datasets": 7,
+    "policy_series": 37,
+    "embedded_existing_figures": 3,
+    "failures": 0,
+    "exact_source_copies": 89,
+    "normalized_metadata_copies": 1
+  },
+  "coordinator_browser_visual_checks": {
+    "M1_all_policy_comparison": "passed; coordinator-reported rendered browser inspection",
+    "M3_tau50": "passed; coordinator-reported rendered browser inspection",
+    "M4": "pending coordinator inspection"
+  },
+  "coordinator_visual_QA": {
+    "M1_compare": "rendered and visually checked",
+    "M3_tau50": "rendered and visually checked",
+    "M4": "model/policy restriction verified in browser; screenshot capture unavailable"
+  }
+}

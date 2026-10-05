@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: "Please cite this software using the metadata below. Research-author attribution and archival DOI remain pending."
+type: software
+title: "Conditional functional recoverability: models and synthetic simulations"
+authors:
+  - name: "umutsimsekci (GitHub account)"
+version: "v1.0.0"
+date-released: 2026-10-05
+repository-code: "https://github.com/umutsimsekci/alzheimer-recoverability-models"
+url: "https://github.com/umutsimsekci/alzheimer-recoverability-models"
+abstract: "Uncalibrated dimensionless ODE models, saved synthetic simulation data, scientific tests, protocols and an offline saved-trajectory viewer. No clinical efficacy or empirical calibration is established."

@@ -1,0 +1,15 @@
+{
+  "expected_full_measurement_replicates": 2700,
+  "expected_mode_measurement_replicates": 2700,
+  "actual_measurement_replicates": 2700,
+  "expected_mode_observation_rows": 167400,
+  "actual_observation_rows": 167400,
+  "full_case_count": 9,
+  "executed_case_count": 9,
+  "expected_mode_sensitivity_records": 36,
+  "actual_sensitivity_records": 36,
+  "full_mode_complete": true,
+  "mode_complete": true,
+  "fitting_substage_complete": false,
+  "failures": []
+}

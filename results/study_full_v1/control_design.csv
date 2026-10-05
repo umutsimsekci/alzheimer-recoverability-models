@@ -1,0 +1,7 @@
+arm,policy,reduce_drive,repair_amplitude,withdrawal,onset,pulse_end
+none,identical_policies,False,0.0,,30,45
+repair,identical_policies,False,0.4,,30,45
+drive,maintenance,True,0.0,,30,45
+drive,full_withdrawal,True,0.0,45.0,30,45
+both,maintenance,True,0.4,,30,45
+both,full_withdrawal,True,0.4,45.0,30,45

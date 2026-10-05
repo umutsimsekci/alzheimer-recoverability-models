@@ -1,0 +1,33 @@
+{
+  "evidence_class": "synthetic_simulation",
+  "protocol_complete": false,
+  "stages_requested": "ABC",
+  "seed": 20261005,
+  "dimensionless": true,
+  "rtol": 1e-09,
+  "atol": 1e-11,
+  "max_step": 0.5,
+  "solver": "DOP853",
+  "sample_step": 0.25,
+  "code_protocol_hashes": {
+    "protocol\\study_design_v1.md": "cb14adbfc8c1d3621acc4f9f5839be8decc999cfb4fcc2b7b0aeb9c5cf4352be",
+    "scripts\\run_study_v1.py": "c11d8991e41b782902cf8a403dc25ffeb01434ef3ec1183b7224bd3d2f32f1aa",
+    "src\\recoverability\\model.py": "f6268fdf0e0d450da5bb86c6c859333f87c6a6df775ef8cda01ccdcc8b7bc3cc",
+    "protocol\\clarifications_v1_1.md": "4a7d18bd56cbf940d22c288b0fed0766cc420c5052b18c6d7601b33d4728eb68"
+  },
+  "python": "3.13.6",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "matplotlib": "3.11.2"
+  },
+  "owner": "literature_experiment_driver",
+  "deferred": [
+    "Stage D observations/nuisance/identifiability/fitting",
+    "M4 evolving-structure isolated/manifold equilibrium certification",
+    "Global control-set reachability proof; pulse-family results only",
+    "Continuous persistence extrema certification; sampled maxima reported"
+  ],
+  "jobs": [],
+  "failures": []
+}

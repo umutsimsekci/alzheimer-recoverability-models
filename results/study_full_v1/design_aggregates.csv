@@ -1,0 +1,13 @@
+model,tau,policy,n_settings,positive_target_transition_count,design_fraction,difference_q10,difference_median,difference_q90,interpretation,ignored_b
+M0,10.0,maintenance,256,0,0.0,1.734723475976807e-18,1.3877787807814457e-17,2.7755575615628914e-17,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M0,10.0,full_withdrawal,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M1,10.0,maintenance,256,73,0.28515625,0.0,4.163336342344337e-17,0.5972498073932359,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,False
+M1,10.0,full_withdrawal,256,0,0.0,0.0,0.0,6.2847227422224705e-12,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,False
+M2,10.0,maintenance,256,0,0.0,0.0,0.0,2.220446049250313e-16,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,False
+M2,10.0,full_withdrawal,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,False
+M3,1.0,maintenance,256,0,0.0,0.0,1.3877787807814457e-17,2.7755575615628914e-17,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M3,1.0,full_withdrawal,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M3,10.0,maintenance,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M3,10.0,full_withdrawal,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M3,50.0,maintenance,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True
+M3,50.0,full_withdrawal,256,0,0.0,0.0,0.0,0.0,arbitrary_uniform_design_not_population_probability; direction_imposed_by_model,True

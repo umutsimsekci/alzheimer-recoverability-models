@@ -1,0 +1,110 @@
+[
+  {
+    "case": "nominal",
+    "a_pre": 0.14,
+    "a_post": 0.06,
+    "r_base": 1.05,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.7039475712995207,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_000",
+    "a_pre": 0.13035606747890482,
+    "a_post": 0.05035606747890482,
+    "r_base": 0.8935027531436294,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.7303235264704951,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_001",
+    "a_pre": 0.136890450364486,
+    "a_post": 0.05689045036448599,
+    "r_base": 1.1806266502689597,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.7012469795735466,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_002",
+    "a_pre": 0.1412304618688185,
+    "a_post": 0.06123046186881849,
+    "r_base": 0.9449243713919294,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.7463129242280674,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_003",
+    "a_pre": 0.12379867903147126,
+    "a_post": 0.04379867903147127,
+    "r_base": 0.8234611490517326,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.8129468446097566,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_004",
+    "a_pre": 0.12435480295936839,
+    "a_post": 0.04435480295936839,
+    "r_base": 0.8450041733078876,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.846862090511923,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_005",
+    "a_pre": 0.16783814856627394,
+    "a_post": 0.08783814856627395,
+    "r_base": 1.2373815559250376,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.18501785270363255,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_006",
+    "a_pre": 0.14719954803434743,
+    "a_post": 0.06719954803434743,
+    "r_base": 1.227959046344954,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.20149219186785103,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  },
+  {
+    "case": "design_007",
+    "a_pre": 0.1307209798717901,
+    "a_post": 0.05072097987179011,
+    "r_base": 1.1517722695447985,
+    "onset": 30.0,
+    "pulse_end": 45.0,
+    "repair_amplitude": 0.4,
+    "withdrawal": null,
+    "x0": 0.6213126848521953,
+    "initial_selection": "largest attracting pretreatment equilibrium, frozen d=.15"
+  }
+]

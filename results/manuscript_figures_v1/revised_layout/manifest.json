@@ -1,0 +1,38 @@
+{
+  "evidence_class": "figures_from_existing_synthetic_CSVs",
+  "new_simulation": false,
+  "new_fitting": false,
+  "source_run": "results/study_full_v1",
+  "source_run_status": "generated_partial_protocol_unreviewed",
+  "source_records_primary": 9252,
+  "per_fraction_denominator": 256,
+  "nominal_excluded": true,
+  "source_hashes": {
+    "summary.json": "7728dd638e63d9d7498e8da6c45041b20ff6be95f25578768226762c9800cfce",
+    "M1_tau10_nominal_trajectories.csv": "36027ba9736ad71e06b9f2e67ddcd28e61b04a06122b8e44203783ecb626d2c6",
+    "primary_outcomes.csv": "4e8b829dc43cbb27cc46d647854d85e534cbf2642e39074b788505bda54cda5c",
+    "two_history_endpoints.csv": "c41d76a44a843a6bde17c9e9e09b82c46eb8076a26dbba926e458158b11df5d2",
+    "ramp_M1_tau10_leg60.csv": "41ddef9a629364d8cc63cfe3515e611fd6fa6fcd8766e7311f8a1547b8bb8dd3",
+    "ramp_M1_tau10_leg240.csv": "1542c9548fe6f3456ae31a507aa015154834f3c291cc892910748a17e509e951",
+    "ramp_M1_tau10_leg960.csv": "88ada7ed4742d0979067986d2754b11391dec1c7c4ee0a783120d959dad392e0",
+    "ramp_M3_tau50_leg60.csv": "990396144363ed3749cdc4c08fc89fa63663396b40e62095dd68f176644a9740",
+    "ramp_M3_tau50_leg240.csv": "b6c8d726c4ad0f7aecb677eaa81d5749b048eb9383f633567be67f72ac696de4",
+    "ramp_M3_tau50_leg960.csv": "4fa8db2af43e99512909da2f1fbf43304a9d80359436eee66409c4a1af42aafe"
+  },
+  "builder_sha256": "abd0786ac021c1474f96dc8624fb8e09deef1ee5ca63ca388e96b2af7dbc4fa5",
+  "matplotlib_version": "3.11.2",
+  "created_unix": 1791190412.395765,
+  "output_hashes": {
+    "figure_1_nominal_policies.pdf": "a8db33cdd3f8c7a009a68db4da040811ba7b1b0e991e2fbaa1e51c5b038aeaf5",
+    "figure_1_nominal_policies.png": "07dace48a555a612e4e5c40b94d94bf4da23f0a1cd1801e851d03122e21938a0",
+    "figure_1_nominal_policies.svg": "c481cda1e6775955d5db7072200ddcb430b7804cad334a22b88bf6b6b0b39904",
+    "figure_2_design_target_fractions.pdf": "afa08918266cf42d5b5ea66c9788946560abfbfaa37f8632a7e1ba8d41243e62",
+    "figure_2_design_target_fractions.png": "1a3b5190fd0c27b8f577c01c6219fb7ca0f6ccebf8edb536323739dbb86c339f",
+    "figure_2_design_target_fractions.svg": "8a2b48ab26447a1cb6053faa5e5ee7803ddffffe23945ef113eb6970044a64b4",
+    "figure_2_exact_counts.csv": "f842872376df095053e9e1a5bac43b9227ceef5c54f63578eb4fbac9b497e729",
+    "figure_3_history_and_rate_diagnostics.pdf": "e00644331f76808903063a06faf1f0e38f4c7db90c3865385eee50e1d0f87328",
+    "figure_3_history_and_rate_diagnostics.png": "a585046dedf8ca056e28c0ac0c4a1bdeb5ae6f6e821727242c14d5ba02950a71",
+    "figure_3_history_and_rate_diagnostics.svg": "e098219e3854e1f6869ca3214c1c429642f6ae1ac3152944cbca51d73165db85"
+  },
+  "portable_copy_note": "Only source_run was normalized from a local absolute path. Figures and numerical outputs are unchanged."
+}

@@ -1,0 +1,190 @@
+[
+  {
+    "design": "anchored_x",
+    "state_columns": [
+      "x",
+      "d"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0
+      ]
+    ],
+    "instantaneous_rank": 1,
+    "singular_values": [
+      1.0
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "redundant_tasks",
+    "state_columns": [
+      "x",
+      "d"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0
+      ],
+      [
+        -0.85,
+        0.0
+      ]
+    ],
+    "instantaneous_rank": 1,
+    "singular_values": [
+      1.3124404748406686,
+      0.0
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "anchored_x_d",
+    "state_columns": [
+      "x",
+      "d"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0
+      ]
+    ],
+    "instantaneous_rank": 2,
+    "singular_values": [
+      1.0,
+      1.0
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "nuisance_y1_only_known_nuisance",
+    "state_columns": [
+      "x",
+      "d"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0
+      ],
+      [
+        -0.85,
+        0.0
+      ]
+    ],
+    "instantaneous_rank": 1,
+    "singular_values": [
+      1.3124404748406686,
+      0.0
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "nuisance_shared_raw_known_nuisance",
+    "state_columns": [
+      "x",
+      "d"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0
+      ],
+      [
+        -0.85,
+        0.0
+      ]
+    ],
+    "instantaneous_rank": 1,
+    "singular_values": [
+      1.3124404748406686,
+      0.0
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "nuisance_y1_only_unknown_nuisance",
+    "state_columns": [
+      "x",
+      "d",
+      "n"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.85,
+        0.0,
+        0.0
+      ]
+    ],
+    "instantaneous_rank": 2,
+    "singular_values": [
+      1.5570807526445714,
+      0.5458933318367374
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "nuisance_shared_raw_unknown_nuisance",
+    "state_columns": [
+      "x",
+      "d",
+      "n"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.85,
+        0.0,
+        1.0
+      ]
+    ],
+    "instantaneous_rank": 2,
+    "singular_values": [
+      1.9278085560065787,
+      0.07780855600657906
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  },
+  {
+    "design": "nuisance_shared_loading_scaled_algebraic_alternative",
+    "state_columns": [
+      "x",
+      "d",
+      "n"
+    ],
+    "matrix": [
+      [
+        -1.0,
+        0.0,
+        1.0
+      ],
+      [
+        -0.85,
+        0.0,
+        0.85
+      ]
+    ],
+    "instantaneous_rank": 1,
+    "singular_values": [
+      1.8560711193270585,
+      0.0
+    ],
+    "scope": "instantaneous known-map observation Jacobian, not full dynamic identifiability"
+  }
+]

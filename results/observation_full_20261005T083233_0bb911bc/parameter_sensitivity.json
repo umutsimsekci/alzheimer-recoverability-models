@@ -1,0 +1,749 @@
+[
+  {
+    "case": "nominal",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.602781900257608,
+    "reference_max_x_error": 0.0,
+    "rank": 1,
+    "singular_values": [
+      9.153872776556629,
+      1.2296797706965484e-08,
+      5.460024753796383e-12
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "nominal",
+    "schedule": "step",
+    "fixed_known_x0": 0.602781900257608,
+    "reference_max_x_error": 2.76174527691353e-10,
+    "rank": 3,
+    "singular_values": [
+      21.52512300964074,
+      0.09896917754980444,
+      0.004424696178165434
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 4864.768594928811,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "nominal",
+    "schedule": "combination",
+    "fixed_known_x0": 0.602781900257608,
+    "reference_max_x_error": 1.5206771397657803e-09,
+    "rank": 3,
+    "singular_values": [
+      4.797616157480383,
+      0.6624283342456857,
+      0.024578884725263036
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 195.1925895380121,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "nominal",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.602781900257608,
+    "rank": 3,
+    "singular_values": [
+      23.876533853412994,
+      0.6761326710606804,
+      0.2112672185671425
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 113.01580063082446,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_000",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.6488240384972784,
+    "reference_max_x_error": 0.0,
+    "rank": 1,
+    "singular_values": [
+      6.83258931365511,
+      9.501519028906097e-08,
+      1.2599571122933815e-11
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_000",
+    "schedule": "step",
+    "fixed_known_x0": 0.6488240384972784,
+    "reference_max_x_error": 1.48054704052214e-08,
+    "rank": 3,
+    "singular_values": [
+      9.727798968641304,
+      0.07254508731179954,
+      0.00024981677073976583
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 38939.73547026094,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_000",
+    "schedule": "combination",
+    "fixed_known_x0": 0.6488240384972784,
+    "reference_max_x_error": 7.085826370101245e-11,
+    "rank": 3,
+    "singular_values": [
+      3.7752554816736206,
+      0.6823929116937888,
+      0.037988599026814826
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 99.37864460357697,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_000",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.6488240384972784,
+    "rank": 3,
+    "singular_values": [
+      12.470908159867177,
+      0.7063894166274043,
+      0.129356821243154
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 96.40703938159874,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_001",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.5948176433203337,
+    "reference_max_x_error": 2.6228927585414397e-08,
+    "rank": 1,
+    "singular_values": [
+      10.04791115815658,
+      2.7266432583568194e-09,
+      2.522728873904806e-10
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_001",
+    "schedule": "step",
+    "fixed_known_x0": 0.5948176433203337,
+    "reference_max_x_error": 1.9747671498038244e-08,
+    "rank": 3,
+    "singular_values": [
+      30.241772096744718,
+      0.10100672864891241,
+      0.007662944901226748
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 3946.494785823576,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_001",
+    "schedule": "combination",
+    "fixed_known_x0": 0.5948176433203337,
+    "reference_max_x_error": 1.9747671498038244e-08,
+    "rank": 3,
+    "singular_values": [
+      5.243834765082873,
+      0.5180744830210754,
+      0.020761328406544228
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 252.57703468675692,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_001",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.5948176433203337,
+    "rank": 3,
+    "singular_values": [
+      32.29514291095857,
+      0.5256423512828737,
+      0.22279811291771973
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 144.9524975235553,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_002",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.6738804771025004,
+    "reference_max_x_error": 0.0,
+    "rank": 1,
+    "singular_values": [
+      5.919232745093153,
+      3.1408391034309266e-09,
+      2.0019904041889782e-11
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_002",
+    "schedule": "step",
+    "fixed_known_x0": 0.6738804771025004,
+    "reference_max_x_error": 5.15076051810226e-08,
+    "rank": 3,
+    "singular_values": [
+      7.3541456433013686,
+      0.0525923668878199,
+      6.110272978439436e-05
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 120357.0719221716,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_002",
+    "schedule": "combination",
+    "fixed_known_x0": 0.6738804771025004,
+    "reference_max_x_error": 1.0875947364930028e-10,
+    "rank": 3,
+    "singular_values": [
+      3.7525489980927316,
+      0.9462407010629745,
+      0.06860718641541162
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 54.69615056608377,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_002",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.6738804771025004,
+    "rank": 3,
+    "singular_values": [
+      10.151193243615875,
+      1.0232446690200752,
+      0.107186126956917
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 94.70622301425355,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_003",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.7682686130144998,
+    "reference_max_x_error": 3.7009105668950326e-08,
+    "rank": 1,
+    "singular_values": [
+      3.4469919207717443,
+      6.922350347796229e-09,
+      9.240939997183894e-12
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_003",
+    "schedule": "step",
+    "fixed_known_x0": 0.7682686130144998,
+    "reference_max_x_error": 4.5576863394458655e-08,
+    "rank": 2,
+    "singular_values": [
+      3.7359977417268717,
+      0.02220596293184641,
+      7.302520168120442e-07
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_003",
+    "schedule": "combination",
+    "fixed_known_x0": 0.7682686130144998,
+    "reference_max_x_error": 3.7009105668950326e-08,
+    "rank": 3,
+    "singular_values": [
+      11.213409601852554,
+      1.291877085426715,
+      0.21345574126686043
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 52.53271490989624,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_003",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.7682686130144998,
+    "rank": 3,
+    "singular_values": [
+      12.29720749703897,
+      1.3231064932388554,
+      0.5683899818008145
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 21.635158765603265,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_004",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.812786273202187,
+    "reference_max_x_error": 3.902715306480786e-08,
+    "rank": 1,
+    "singular_values": [
+      2.5889753617479863,
+      5.017324179318727e-09,
+      1.1856651505080526e-12
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_004",
+    "schedule": "step",
+    "fixed_known_x0": 0.812786273202187,
+    "reference_max_x_error": 5.1681688706395335e-08,
+    "rank": 2,
+    "singular_values": [
+      2.7154396570618524,
+      0.01236692914482072,
+      3.1839592226549346e-08
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_004",
+    "schedule": "combination",
+    "fixed_known_x0": 0.812786273202187,
+    "reference_max_x_error": 3.328381759093446e-08,
+    "rank": 3,
+    "singular_values": [
+      3.4823218119683457,
+      0.3228315525506836,
+      0.000597135659219333
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 5831.709693105531,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_004",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.812786273202187,
+    "rank": 3,
+    "singular_values": [
+      5.1133767344711964,
+      0.40090211391972,
+      0.0007295518718620189
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 7008.928263620844,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_005",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.14642807479671213,
+    "reference_max_x_error": 3.6586773416447116e-08,
+    "rank": 1,
+    "singular_values": [
+      1.6696167757194667,
+      3.0127708972295583e-09,
+      1.2771145388563711e-11
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_005",
+    "schedule": "step",
+    "fixed_known_x0": 0.14642807479671213,
+    "reference_max_x_error": 3.6586773416447116e-08,
+    "rank": 3,
+    "singular_values": [
+      1.1313542890023551,
+      0.1943296745655563,
+      0.0011126921941311035
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 1016.7720192247998,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_005",
+    "schedule": "combination",
+    "fixed_known_x0": 0.14642807479671213,
+    "reference_max_x_error": 3.6586773416447116e-08,
+    "rank": 3,
+    "singular_values": [
+      1.0915929454933249,
+      0.198505280132292,
+      0.004327841106025782
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 252.22574460357788,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_005",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.14642807479671213,
+    "rank": 3,
+    "singular_values": [
+      2.2858707689580147,
+      0.33334480284125284,
+      0.004719178998390411
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 484.378907801053,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_006",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.1439599625021258,
+    "reference_max_x_error": 0.0,
+    "rank": 1,
+    "singular_values": [
+      2.0548667725798206,
+      8.280738144298711e-10,
+      2.9363645303636947e-13
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_006",
+    "schedule": "step",
+    "fixed_known_x0": 0.1439599625021258,
+    "reference_max_x_error": 2.130417196821721e-09,
+    "rank": 3,
+    "singular_values": [
+      1.1926199013119307,
+      0.23264336704948055,
+      0.002527064470249181
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 471.9388505329001,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_006",
+    "schedule": "combination",
+    "fixed_known_x0": 0.1439599625021258,
+    "reference_max_x_error": 1.3162403042499271e-09,
+    "rank": 3,
+    "singular_values": [
+      1.1602967802348316,
+      0.231073575845148,
+      0.005698473095095053
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 203.61538273007804,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_006",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.1439599625021258,
+    "rank": 3,
+    "singular_values": [
+      2.6395700421486765,
+      0.3623432276910695,
+      0.006516943707817854
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 405.03189232434164,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_007",
+    "schedule": "baseline",
+    "fixed_known_x0": 0.18529863802041815,
+    "reference_max_x_error": 0.0,
+    "rank": 1,
+    "singular_values": [
+      7.142373973433483,
+      7.268362840989509e-13,
+      9.582115223976177e-15
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": null,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_007",
+    "schedule": "step",
+    "fixed_known_x0": 0.18529863802041815,
+    "reference_max_x_error": 2.981029582904693e-09,
+    "rank": 3,
+    "singular_values": [
+      3.413859719679893,
+      0.32690497053461026,
+      0.011117889518951063
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 307.0600507282231,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_007",
+    "schedule": "combination",
+    "fixed_known_x0": 0.18529863802041815,
+    "reference_max_x_error": 1.3629490452915505e-09,
+    "rank": 3,
+    "singular_values": [
+      3.3512116035276143,
+      0.31229843174863653,
+      0.010092223850322378
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 332.0587863715058,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  },
+  {
+    "case": "design_007",
+    "schedule": "stacked_baseline_step_combination",
+    "fixed_known_x0": 0.18529863802041815,
+    "rank": 3,
+    "singular_values": [
+      8.596219671893115,
+      0.4560175923375511,
+      0.015534232197775482
+    ],
+    "relative_cutoff": 1e-06,
+    "absolute_floor": 1e-10,
+    "condition_number": 553.3726779958974,
+    "columns": [
+      "log_a",
+      "log_b",
+      "log_r"
+    ],
+    "scope": "local known-map M1 trajectory sensitivity; no global identifiability or performed fit"
+  }
+]

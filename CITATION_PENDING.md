@@ -1,9 +1,9 @@
 # Citation and license status
 
-Software citation: see CITATION.cff, version v1.0.1, dated 2026-10-05, for the confirmed account attribution `umutsimsekci (GitHub account)`. This identifies the software repository account; it does not infer a human identity or a research-manuscript author list.
+Software citation: see CITATION.cff, version v2.0.0, dated 2026-10-19. The author name and ORCID are the author's previously confirmed research attribution. The v1.0.1 tag preserves the original account-attributed metadata.
 
-Public repository creation has been verified at https://github.com/umutsimsekci/alzheimer-recoverability-models. The coordinator's first push will make this code/data package reader-accessible there. Until files are visible, repository existence alone is not code availability.
+Repository: https://github.com/umutsimsekci/alzheimer-recoverability-models. Scientific code and generated data are distinct from a published research article. The versioned package does not establish journal acceptance.
 
-Author-approved research attribution, author identifiers and archival DOI: pending. No DOI, journal publication or manuscript submission is claimed by this software citation.
+Archival DOI: not assigned. No DOI or journal publication is claimed by this software citation.
 
 License: pending explicit author selection. No legal reuse license has been chosen on the author's behalf. Public visibility alone does not grant a legal reuse license.

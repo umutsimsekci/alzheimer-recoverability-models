@@ -1,11 +1,13 @@
 cff-version: 1.2.0
-message: "Please cite this software using the metadata below. Research-author attribution and archival DOI remain pending."
+message: "Please cite this versioned scientific code and synthetic data package. No archival DOI has been assigned."
 type: software
-title: "Conditional functional recoverability: models and synthetic simulations"
+title: "Functional recoverability: synthetic dynamics, model discrimination and withheld-schedule prediction"
 authors:
-  - name: "umutsimsekci (GitHub account)"
-version: "v1.0.1"
-date-released: 2026-10-05
+  - family-names: "Şimşekçi"
+    given-names: "Umut"
+    orcid: "https://orcid.org/0000-0002-5469-1551"
+version: "v2.0.0"
+date-released: 2026-10-19
 repository-code: "https://github.com/umutsimsekci/alzheimer-recoverability-models"
 url: "https://github.com/umutsimsekci/alzheimer-recoverability-models"
-abstract: "Uncalibrated dimensionless ODE models, saved synthetic simulation data, scientific tests, protocols and an offline saved-trajectory viewer. No clinical efficacy or empirical calibration is established."
+abstract: "Uncalibrated dimensionless ODE models, noisy parameter fitting, training-only model selection, withheld-schedule prediction, frozen structural profiles, saved synthetic data, scientific tests and an offline original-trajectory viewer. Optimizer failures and post hoc sensitivity checks are retained. No clinical efficacy or empirical calibration is established."

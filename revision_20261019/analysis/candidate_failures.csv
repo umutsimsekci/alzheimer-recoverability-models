@@ -1,0 +1,10 @@
+generator,case,sigma,replicate,design,candidate,true_family,statuses,messages
+M1,nominal,0.01,1,A_step_step,M2,False,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_0,0.01,0,A_step_step,M1,True,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_0,0.01,1,A_step_step,M1,True,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_0,0.01,1,A_step_step,M2,False,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_0,0.01,2,A_step_step,M2,False,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_0,0.03,1,A_step_step,M2,False,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_1,0.01,0,A_step_step,M1,True,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M1,design_1,0.01,3,A_step_step,M1,True,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.
+M2,design_1,0.01,1,A_step_step,M2,True,0;0;0,The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded. | The maximum number of function evaluations is exceeded.

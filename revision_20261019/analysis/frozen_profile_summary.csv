@@ -1,0 +1,7 @@
+design,sigma,n,median_profile_width,median_r_relative_error,median_d_absolute_error,median_profile_sse_range,singleton_grid_sets,width_interpretation
+A_step_step,0.01,4,0.775,1.1278458939765483,0.40076937287980297,3228.8909265215125,0,upper endpoint imposed by fitted r bound; not d identification
+A_step_step,0.03,4,0.775,0.05723129650885152,0.04756174740197446,323.5790948760626,0,upper endpoint imposed by fitted r bound; not d identification
+B_step_combination,0.01,4,0.024999999999999994,0.006381698606502447,0.005462173912717763,183999.67093118042,0,grid extent only; threshold crossings not refined
+B_step_combination,0.03,4,0.1,0.02894366249785383,0.017475047197146917,20326.22534560093,0,grid extent only; threshold crossings not refined
+C_step_direct_d,0.01,4,0.0,0.001077397912712954,0.00044944252265613494,280782.58619618125,4,"grid-unresolved, not zero uncertainty"
+C_step_direct_d,0.03,4,0.0,0.010143788355185495,0.0030604775543390944,31439.21478036011,4,"grid-unresolved, not zero uncertainty"

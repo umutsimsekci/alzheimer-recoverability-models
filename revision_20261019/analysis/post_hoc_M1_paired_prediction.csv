@@ -1,0 +1,5 @@
+post_hoc,generator,candidate_fixed,sigma,schedule,paired_successful_fits,median_A,median_B,B_lower_count
+True,M1,M1,0.01,altered_pulse,8,0.06029546891195787,0.0015684153583709406,7
+True,M1,M1,0.01,full_withdrawal,8,0.09747591341793266,0.003050683619780444,7
+True,M1,M1,0.03,altered_pulse,12,0.34423096326235947,0.002959580579406846,12
+True,M1,M1,0.03,full_withdrawal,12,0.10348409449676461,0.007263024196100514,12
